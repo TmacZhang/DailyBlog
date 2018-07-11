@@ -1,4 +1,4 @@
-// Sort a linked list in O(n log n) time using constant space complexity. ÔÚO(nlogn)Ê±¼äÄÚ£¬ÀûÓÃ³£Á¿¿Õ¼ä£¬¶ÔÁ´±í½øĞĞÅÅĞò
+// Sort a linked list in O(n log n) time using constant space complexity. åœ¨O(nlogn)æ—¶é—´å†…ï¼Œåˆ©ç”¨å¸¸é‡ç©ºé—´ï¼Œå¯¹é“¾è¡¨è¿›è¡Œæ’åº
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -11,7 +11,7 @@
  * }
  */
 public class Solution {
-    //¹é²¢£¬ÀûÓÃÁ½¸ö¿ìÂıÖ¸Õë·Ö²ğ
+    //å½’å¹¶ï¼Œåˆ©ç”¨ä¸¤ä¸ªå¿«æ…¢æŒ‡é’ˆåˆ†æ‹†
     public ListNode sortList(ListNode head) {
         if(head == null || head.next == null){
             return head;
@@ -25,7 +25,7 @@ public class Solution {
         slow.next = null;
         return mergeListNode(sortList(head), sortList(head2));
     }
-    //ºÏ²¢£¬µİ¹é
+    //åˆå¹¶ï¼Œé€’å½’
     private ListNode mergeListNode(ListNode list1, ListNode list2){
         if(list1 == null){
             return list2;

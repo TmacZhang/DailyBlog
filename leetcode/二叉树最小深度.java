@@ -7,7 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-//深度优先搜索
+//娣卞害浼樺厛鎼滅储
 public class Solution {
     public int run(TreeNode root) {
         if(root == null){
